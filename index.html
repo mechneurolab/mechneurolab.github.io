@@ -2,6 +2,42 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
+layout: posts
+permalink: /
+hidden: true
+classes:
+    - landing
+author_profile: false
+header:
+   overlay_filter : rgba(94,97,108 ,0.7)
+   overlay_image: /assets/images/brainstiff.jpg
+   actions:
+     - label: "<i class='fas fa-home'></i> Home Page"
+       url: "https://mechneurolab.squarespace.com"
+     - label: "<i class='fab fa-github-square'></i> See repositories"
+       url: "https://github.com/mechneurolab"
+excerpt: >
+   Open source tools and data for open science from MNL.<br />
+feature_row:
+    - image_path: /assets/images/elastome.png
+      title: "Standard-Space Atlas of Human Brain Viscoelasticity"
+      excerpt: "MRE134 atlas in MNI space created using MRE data from 134 healthy, young adult participants"
+      url: "https://github.com/mechneurolab/MRE134"
+      btn_label: "GitHub Project Page"
+      btn_class: "btn--primary"
+    - image_path: /assets/images/elastome.png
+      title: "Cortical Simulations"
+      excerpt: ""
+      url: "https://github.com/mechneurolab/cortical_simulations"
+      btn_label: "GitHub Project Page"
+      btn_class: "btn--primary"
+    - image_path: /assets/images/elastome.png
+      title: "Brain Biomechanics Imaging Resources"
+      excerpt: "Repository of imaging data for developing and validating next generation models of traumatic brain injury"
+      url: "https://www.nitrc.org/projects/bbir"
+      btn_label: "See NITRC Page"
+      btn_class: "btn--primary"
 ---
+<!--
+{% include feature_row %}
+-->
