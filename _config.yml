@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 twitter_username: MechNeuroLab
 github_username: mechaneurolab
-minimal_mistakes_skin: air
+minimal_mistakes_skin: air # overriden in 
 search: true
 logo: "/assets/images/mnl-logo.png"
 
@@ -61,7 +61,7 @@ plugins:
 author:
   name   : Mechanical Neuroimaging Lab
   avatar : "/assets/images/mnl-logo.png"
-  bio    : "We use high-res magnetic resonance elastography methods to advance neuroscience, neurology, and neurosurgery."
+  bio    : "We use high-resolution magnetic resonance elastography methods to advance neuroscience, neurology, and neurosurgery."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -107,6 +107,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: false
 
 category_archive:
   type: liquid
@@ -114,3 +121,8 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
