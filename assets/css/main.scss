@@ -4,11 +4,15 @@
 
 @charset "utf-8";
 
-$serif              : "Open Sans", Georgia, Times, serif;
-$sans-serif-narrow  : "Archvio", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$serif              : "Poppins", Georgia, Times, serif;
+$sans-serif-narrow  : "Poppins", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 
 $global-font-family : $serif;
 $header-font-family : $sans-serif-narrow;
+/*
+$header-font-family : $sans-serif-narrow;
+*/
+
 
 /* Colors */
 $background-color: #FFFFFF !default;
